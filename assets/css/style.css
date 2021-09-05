@@ -14,7 +14,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: url(/assets/img/BG.png);
+    background-image: url(../img/BG.png);
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
@@ -49,7 +49,7 @@
     position: absolute;
     width: 40px;
     height: 30px;
-    background-image: url(/assets/img/Icon.png);
+    background-image: url(../img/leaves.jpeg);
     top: 2.5%;
 }
 .form__title{
