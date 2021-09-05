@@ -115,6 +115,8 @@
     left: 0;
     padding: 8px 30px;
     font-size: 16px;
+    text-decoration: none;
+    color: #888888;
 }
 .form__button:hover{
     cursor: pointer;
