@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    animation: Float 1.2s;
+
+}
+.border{
+    position: relative;
+    height: 100vh;
+    background-color: rgb(210, 241, 68);
+}
+.background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(/assets/img/BG.png);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.signup{
+    position: absolute;
+    height: 80%;
+    width: 70%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.signup__form{
+    position: absolute;
+    width: 47%;
+    height: 100%;
+    background-color: #fff;
+    padding-left: 5%;
+    box-sizing:border-box;
+}
+.form__logo{
+    display: none;
+    position: absolute;
+    width: 256px;
+    height: 270px;
+    right: 5%;
+    top: 10%;
+    border-radius: 8px ;
+    border: black solid 4px;
+}
+.form__icon{
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    background-image: url(/assets/img/Icon.png);
+    top: 2.5%;
+}
+.form__title{
+    position: absolute;
+    width: 70%;
+    top: 10%;
+}
+.title__aroma{
+    color: #B3B3B3;
+    margin: 12px 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+.title__aroma strong{
+    color: black;
+}
+.title__drcs{
+    color: #888888;
+}
+.sign__form{
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 67%;
+}
+.form__signin{
+    padding: 10px 10px;
+    border-radius: 4px;
+    border: #ccc solid 1px;
+}
+.form__signin:focus{
+    transition: .5s;
+    outline: none !important;
+    border: rgb(19, 104, 11) 3px solid ;
+    box-sizing: margin-box;
+}
+.form__checkbox{
+    position: absolute;
+    top: 30%;
+    cursor: pointer;
+}
+.form__checkbox+label{
+    position: absolute;
+    top: 29%;
+    left: 15px;
+    cursor: pointer;
+}
+.form__forgot{
+    position: absolute;
+    left: 55%;
+    top: 30%;
+    font-weight: bold;
+    font-size: 12px;
+}
+.form__forgot:hover{
+    text-shadow: 0px 5px 5px #999999;
+    transition: .3s;
+    cursor: pointer;
+}
+.form__button{
+    position: absolute;
+    top: 45%;
+    left: 0;
+    padding: 8px 30px;
+    font-size: 16px;
+}
+.form__button:hover{
+    cursor: pointer;
+    background-color: #71A482;
+    color: white;
+    transition: .4s;
+}
+.form__button--login{
+    background-color: black;
+    border: black 1px solid;
+    color: white;
+    border-radius: 4px;
+}
+.form__button--signup{
+    position: absolute;
+    transform: translateX(100%);
+    border: #ccc 1px solid;
+    color: rgb(129, 129, 129);
+    border-radius: 4px;
+}
+.form__conditions{
+    position: absolute;
+    top: 70%;
+    width: 250px;
+    font-size: 14px;
+}
+.form__conditions strong:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    transition: .4s;
+}
+.signup__logo{
+    background-image: url(/assets/img/leaves.jpeg);
+    position: absolute;
+    width: 53%;
+    height: 100%;
+    right: 0;
+}
+.logo__nav{
+    position: absolute;
+    right: 5%;
+    top: 3%;
+}
+.nav__item{
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+.nav__item:hover{
+    padding-bottom: 7px ;
+    border-bottom: white .5px solid;
+    transition: .3s;
+}
+.signup__logo .logo{
+    border-radius: 12px ;
+    position: absolute;
+    width: 256px;
+    height: 266px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo:hover{
+    transform: translate(-50%, -50%);
+    width: 276px;
+    height: 286px;
+    transition: .2s linear;
+}
+.logo__button{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    padding: 5px 10px;
+    min-width: 70px;
+    color: #fff;
+    border: none;
+}
+.logo__button:hover{
+    background-color: white;
+    color: #70A382;
+    font-weight: bold;
+    transition: .4s;
+    cursor: pointer;
+}
+.logo__button--transparent{
+    background-color: transparent;
+    border: white solid .5px;
+    border-radius: 2px;
+    right: calc(80px + 5%);
+}
+.logo__button--blur{
+    background-color: #5E6F67 ;
+    border-radius: 2px;
+    padding: 5.5px;
+}
+.signup__button{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #FF175A;
+    bottom: 25%;
+    left: 47%;
+    transform: translate(-50%);
+}
+.signup__button>span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+/* KeyFrames */
+@keyframes Float{
+    0%{
+        top: 20%;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* Media Queries */
+@media screen and (max-width: 1020px) {
+    .signup__logo,.signup__button{
+        display: none;
+    }
+    .signup__form{
+        width: 100%;
+    }
+    .form__forgot{
+        left: 140px;
+    }
+    .logo{
+        display: flex;
+    }
+    .form__logo{
+        display: block;
+    }
+    .form__signin{
+        max-width: 50%;
+    }
+    .form__title{
+        width: 45%;
+    }
+    .form__conditions{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 856px){
+    .signup__logo,.signup__button,.form__logo{
+        display: none;
+    }
+    .form__signin{
+        max-width: 100%;
+    }
+    .form__title{
+        width: 90%;
+    }
+    .form__conditions{
+        width: 250px;
+    }
+}
