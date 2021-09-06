@@ -57,13 +57,13 @@
     width: 70%;
     top: 10%;
 }
-.title__aroma{
+.title__narTech{
     color: #B3B3B3;
     margin: 12px 0;
     font-size: 36px;
     font-weight: bold;
 }
-.title__aroma strong{
+.title__narTech strong{
     color: black;
 }
 .title__drcs{
